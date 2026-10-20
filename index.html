@@ -529,6 +529,12 @@ const WHATSAPP = "";          // לדוגמה: "9725XXXXXXXX" – מספר וו�
 const WEB3FORMS_KEY = "";     // מפתח Web3Forms לשליחת הטופס למייל
 
 const $ = s => document.querySelector(s);
+
+/* always open at the top (no remembered scroll, no #anchor jump) */
+if('scrollRestoration' in history)history.scrollRestoration='manual';
+if(location.hash)history.replaceState(null,'',location.pathname+location.search);
+const toTopNow=()=>{const h=document.documentElement,b=h.style.scrollBehavior;h.style.scrollBehavior='auto';scrollTo(0,0);h.style.scrollBehavior=b};
+toTopNow();addEventListener('load',toTopNow);addEventListener('pageshow',toTopNow);
 const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
 
 /* hero name letters */
