@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>FORUM CLUB | מועדון עסקים פרטי ב-BSR City פתח תקווה</title>
-<meta name="description" content="FORUM CLUB – מועדון עסקים פרטי ב-BSR City פתח תקווה. המקום שבו אנשים, עסקים והזדמנויות נפגשים: קהילה איכותית, אירועים, חדרי ישיבות, מרפסת, בר וחדר פודקאסט.">
-<meta property="og:title" content="FORUM CLUB – המקום שבו אנשים. עסקים. והזדמנויות נפגשים.">
-<meta property="og:description" content="מועדון עסקים פרטי ב-BSR City פתח תקווה.">
+<title>FORUM BUSINESS CLUB | מתחם עסקים, כנסים ואירועים ב-BSR City פתח תקווה</title>
+<meta name="description" content="FORUM BUSINESS CLUB – מתחם עסקים ב-BSR City פתח תקווה: אולם כנסים ואירועים, חדרי ישיבות, לאונג׳ עבודה ומשרדים, חדר פודקאסט, בר ומרפסת גג. לחברי המועדון ולכל מי שרוצה לארח.">
+<meta property="og:title" content="FORUM BUSINESS CLUB – המקום שבו אנשים. עסקים. והזדמנויות נפגשים.">
+<meta property="og:description" content="מתחם עסקים, כנסים ואירועים ב-BSR City פתח תקווה.">
 <meta property="og:image" content="img/hall-v2.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -48,7 +48,7 @@ button,input,select{font:inherit}
 .brand{display:flex;align-items:center;gap:14px;direction:ltr}
 .brand svg{width:44px;height:44px;flex:none}
 .brand .bt{display:flex;flex-direction:column;line-height:1}
-.brand .bt b{font-family:Cinzel,serif;font-weight:500;font-size:26px;letter-spacing:.14em}
+.brand .bt b{font-family:Cinzel,serif;font-weight:500;font-size:21px;letter-spacing:.12em;white-space:nowrap}
 .brand .bt small{font-family:Cinzel,serif;font-size:9.5px;letter-spacing:.32em;color:var(--muted);margin-top:6px}
 .nav{display:flex;gap:34px;font-size:15px}
 .nav a{position:relative;padding:6px 0;color:#efe8dd;text-shadow:0 1px 10px rgba(0,0,0,.7);transition:color .3s}
@@ -71,10 +71,17 @@ button,input,select{font:inherit}
 .hero-copy a,.hero-copy button{pointer-events:auto}
 .film-ui,.scroll-cue{z-index:5}
 .hero-mark{width:118px;height:118px;margin-bottom:22px;filter:drop-shadow(0 8px 30px rgba(201,164,106,.35))}
-.hero-name{font-family:Cinzel,serif;font-weight:500;font-size:clamp(34px,3.2vw,58px);letter-spacing:.1em;line-height:1;direction:ltr;white-space:nowrap}
+.hero-name{filter:drop-shadow(0 2px 12px rgba(0,0,0,.6));font-family:Cinzel,serif;font-weight:500;font-size:clamp(46px,4.8vw,84px);letter-spacing:.1em;line-height:1;direction:ltr;white-space:nowrap}
 .hero-name span{display:inline-block;background:var(--gold-grad);background-size:900% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;opacity:0;transform:translateY(30px) rotateX(70deg);filter:blur(6px)}
 .loaded .hero-name span{animation:letter 1.1s var(--ease) forwards}
 @keyframes letter{to{opacity:1;transform:none;filter:none}}
+.hero-sub{filter:drop-shadow(0 1px 6px rgba(0,0,0,.85));font-family:Cinzel,serif;font-weight:500;font-size:clamp(14px,1.25vw,21px);letter-spacing:.42em;margin-top:12px;margin-right:-.42em;direction:ltr;white-space:nowrap}
+.hero-ctas{display:flex;flex-direction:column;align-items:center;gap:14px;margin-top:34px}
+.hero-ctas .btn{margin-top:0}
+.hero .link-join{font-size:14.5px;color:#e9dcc6;border-bottom:1px solid rgba(201,164,106,.6);padding-bottom:2px;transition:color .3s}
+.hero .link-join:hover{color:var(--gold-hi)}
+.hero-cap{position:absolute;z-index:4;top:104px;right:28px;display:flex;align-items:center;gap:10px;font-size:15px;font-weight:500;color:#f6efe4;text-shadow:0 1px 10px rgba(0,0,0,.7);direction:rtl}
+.hero-cap::before{content:"";width:28px;height:1px;background:var(--gold)}
 .hero h1{font-weight:400;font-size:clamp(22px,1.9vw,29px);line-height:1.45;margin:30px 0 18px;color:#f2ece3}
 .hero p.lead{color:var(--muted);font-size:16.5px;max-width:390px}
 .hero .btn{margin-top:34px;padding:16px 34px;font-size:16px}
@@ -147,6 +154,21 @@ section{position:relative;scroll-margin-top:66px}
 .manifest.in .script span:nth-child(2){transition-delay:.5s}
 .manifest.in .script span:nth-child(3){transition-delay:1s}
 
+/* ============ HALL ============ */
+.hall{display:grid;grid-template-columns:1fr 1.25fr;min-height:560px;background:var(--bg);border-bottom:1px solid var(--line)}
+.hall-txt{padding:80px 64px;display:flex;flex-direction:column;justify-content:center}
+.eyebrow{font-family:Cinzel,serif;font-size:11.5px;letter-spacing:.3em;color:var(--gold);direction:ltr;text-align:right;margin-bottom:14px}
+.hall-txt h2{font-weight:400;font-size:clamp(30px,3vw,44px);line-height:1.2;margin-bottom:20px}
+.hall-txt p{font-size:17px;color:#d8d0c3;line-height:1.85;max-width:520px}
+.hall-txt ul{list-style:none;margin:24px 0 8px;display:grid;gap:12px}
+.hall-txt li{display:flex;align-items:center;gap:12px;font-size:16px;color:#eee6da}
+.hall-txt li::before{content:"";width:8px;height:8px;flex:none;transform:rotate(45deg);background:var(--gold-grad)}
+.hall-btns{display:flex;flex-wrap:wrap;gap:14px;margin-top:26px}
+.hall-img{position:relative;overflow:hidden;min-height:360px}
+.hall-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:40% 55%;transition:transform 1.6s var(--ease)}
+.hall-img:hover img{transform:scale(1.04)}
+.hall-img::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(270deg,var(--bg) 0%,rgba(13,12,11,0) 22%)}
+
 /* ============ SPACES ============ */
 .spaces{display:flex;height:clamp(300px,34vw,470px);gap:8px;background:var(--bg)}
 .space{position:relative;flex:1;overflow:hidden;cursor:pointer;transition:flex 1s var(--ease)}
@@ -211,7 +233,7 @@ section{position:relative;scroll-margin-top:66px}
 .cheers .slogan{font-family:Heebo;font-style:italic;font-weight:300;font-size:22px;color:var(--gold-hi);margin-bottom:12px}
 .cheers .lock{display:flex;align-items:center;justify-content:center;gap:14px;direction:ltr}
 .cheers .lock svg{width:38px;height:38px}
-.cheers .lock b{font-family:Cinzel,serif;font-weight:500;font-size:24px;letter-spacing:.24em}
+.cheers .lock b{font-family:Cinzel,serif;font-weight:500;font-size:22px;letter-spacing:.16em;white-space:nowrap}
 .cheers .mid small{display:block;margin-top:10px;font-size:16px;color:#d8d0c3}
 .wa{position:relative;justify-self:center;display:flex;align-items:center;gap:18px;padding:16px 22px;border:1px solid var(--line);border-radius:16px;background:rgba(20,18,16,.6);transition:border-color .4s,transform .4s var(--ease),background .4s}
 .wa:hover{border-color:var(--gold);transform:translateY(-3px);background:rgba(201,164,106,.08)}
@@ -248,6 +270,10 @@ footer .wrap{display:flex;align-items:center;justify-content:space-between;gap:2
 @media (max-width:1100px){
   .nav{gap:20px;font-size:14px}
   .about .wrap{grid-template-columns:1fr;gap:56px}
+  .hall{grid-template-columns:1fr}
+  .hall-img{order:-1;min-height:380px}
+  .hall-img::after{background:linear-gradient(0deg,var(--bg) 0%,rgba(13,12,11,0) 30%)}
+  .hall-txt{padding:50px 32px 70px}
   .about .divider{display:none}
   .manifest{order:-1;text-align:center}
   .manifest .rule{margin-inline:auto;transform-origin:center}
@@ -263,12 +289,17 @@ footer .wrap{display:flex;align-items:center;justify-content:space-between;gap:2
   .hdr.open .nav a{padding:14px 4px;border-bottom:1px solid rgba(201,164,106,.1);font-size:17px}
   .brand .bt b{font-size:21px}.brand svg{width:36px;height:36px}
   .brand .bt small{display:none}
+  .brand .bt b{font-size:15px;letter-spacing:.1em}
+  .hero-cap{top:142px;right:auto;left:50%;translate:-50% 0;white-space:nowrap;font-size:14px}
+  .hero-sub{font-size:14px;font-weight:600;background:none;-webkit-text-fill-color:#efd9ad;color:#efd9ad}
+  .hall-txt{padding:40px 20px 60px}
+  .eyebrow{text-align:center}.hall-txt{text-align:center;align-items:center}.hall-txt li{justify-content:center}.hall-btns{justify-content:center}
   .hero{min-height:600px}
-  .hero-copy{width:100%;background:linear-gradient(0deg,rgba(10,9,8,.96) 0%,rgba(10,9,8,.75) 45%,rgba(10,9,8,.2) 75%,rgba(10,9,8,.45) 100%);justify-content:flex-end;padding:110px 16px 90px}
+  .hero-copy{width:100%;background:linear-gradient(0deg,rgba(10,9,8,.96) 0%,rgba(10,9,8,.8) 45%,rgba(10,9,8,.55) 72%,rgba(10,9,8,.35) 100%);justify-content:flex-end;padding:110px 16px 90px}
   .hero-copy::after,.towers{display:none}
   .vignette{background:none}
-  .hero-mark{width:84px;height:84px;margin-bottom:14px}
-  .hero-name{font-size:clamp(34px,10vw,48px)}
+  .hero-mark{display:none}
+  .hero-name{font-size:clamp(46px,14vw,64px)}
   .hero h1{margin:20px 0 12px}
   .hero p.lead{font-size:15.5px}
   .hero .btn{margin-top:24px}
@@ -300,7 +331,7 @@ footer .wrap{display:flex;align-items:center;justify-content:space-between;gap:2
 @media (max-width:420px){
   .feat p{font-size:13px}
   .script{font-size:27px}
-  .cheers .lock b{font-size:20px}
+  .cheers .lock b{font-size:15px}
 }
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation:none!important;transition:none!important}
@@ -331,18 +362,18 @@ footer .wrap{display:flex;align-items:center;justify-content:space-between;gap:2
 <!-- HEADER -->
 <header class="hdr" id="hdr">
   <div class="wrap">
-    <a href="#join" class="btn"><svg><use href="#send"/></svg>בקשת הצטרפות</a>
+    <a href="#join" class="btn"><svg><use href="#send"/></svg>השאר פרטים</a>
     <nav class="nav" id="nav">
       <a href="#top" class="on">דף הבית</a>
-      <a href="#about">על המועדון</a>
-      <a href="#benefits">היתרונות</a>
-      <a href="#spaces">המרחב שלנו</a>
-      <a href="#spaces">אירועים</a>
+      <a href="#about">על המקום</a>
+      <a href="#hall">אולם כנסים ואירועים</a>
+      <a href="#spaces">החללים</a>
+      <a href="#benefits">מועדון העסקים</a>
       <a href="#join">צור קשר</a>
     </nav>
-    <a href="#top" class="brand" aria-label="FORUM CLUB">
+    <a href="#top" class="brand" aria-label="FORUM BUSINESS CLUB">
       <svg><use href="#mark"/></svg>
-      <span class="bt"><b class="gold-text">FORUM CLUB</b><small>BUSINESS · CONNECTIONS · OPPORTUNITIES</small></span>
+      <span class="bt"><b class="gold-text">FORUM BUSINESS CLUB</b><small>PEOPLE · IDEAS · OPPORTUNITIES</small></span>
     </a>
     <button class="burger" id="burger" aria-label="תפריט"><svg width="20" height="20" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></button>
   </div>
@@ -357,16 +388,21 @@ footer .wrap{display:flex;align-items:center;justify-content:space-between;gap:2
       <g fill="#c9a46a" opacity=".35" id="wins"></g>
     </svg>
     <svg class="hero-mark fade-up" style="animation-delay:.1s"><use href="#mark"/></svg>
-    <div class="hero-name" id="heroName" aria-label="FORUM CLUB">FORUM CLUB</div>
+    <div class="hero-name" id="heroName" aria-label="FORUM BUSINESS CLUB">FORUM</div>
+    <div class="hero-sub gold-text fade-up" style="animation-delay:.8s">BUSINESS CLUB</div>
     <h1 class="fade-up" style="animation-delay:1.1s">המקום שבו אנשים. עסקים.<br>והזדמנויות נפגשים.</h1>
-    <p class="lead fade-up" style="animation-delay:1.3s">מועדון עסקים פרטי לאנשים שרוצים להיות חלק מקהילה איכותית, ליצור קשרים משמעותיים ולפתוח דלתות להזדמנויות חדשות.</p>
-    <a href="#join" class="btn fade-up magnet" style="animation-delay:1.5s">בקשת הצטרפות למועדון<svg><use href="#arrow"/></svg></a>
+    <p class="lead fade-up" style="animation-delay:1.3s">מתחם עסקים בסטנדרט בינלאומי בפתח תקווה: אולם כנסים ואירועים, חדרי ישיבות, לאונג׳ עבודה, פודקאסט ומרפסת גג – לחברי המועדון ולכל מי שרוצה לארח, להיפגש ולעבוד.</p>
+    <div class="hero-ctas fade-up" style="animation-delay:1.5s">
+      <a href="#join" class="btn magnet" data-topic="כנס / אירוע">תיאום סיור והזמנת אירוע<svg><use href="#arrow"/></svg></a>
+      <a href="#join" class="link-join" data-topic="הצטרפות למועדון">או הצטרפות למועדון העסקים</a>
+    </div>
     <div class="loc fade-up" style="animation-delay:1.7s"><svg><use href="#pin"/></svg>BSR CITY PETAH TIKVA</div>
   </div>
 
   <div class="hero-film" id="film">
     <div class="stage"><div class="frame" id="frame"></div></div>
     <div class="vignette"></div>
+    <div class="hero-cap">אולם הכנסים והאירועים</div>
     <div class="film-ui">
       <button class="watch" data-film type="button"><span class="pl"><svg viewBox="0 0 24 24"><path d="M7 4.5v15l13-7.5z" fill="currentColor"/></svg></span><span><b>צפה בסרט על המקום</b><small>דקה וקצת · עם סאונד</small></span></button>
     </div>
@@ -378,42 +414,63 @@ footer .wrap{display:flex;align-items:center;justify-content:space-between;gap:2
 <section class="about" id="about">
   <div class="wrap">
     <div id="benefits">
-      <h2 class="feat-title rv">מה מחכה לחברי המועדון?</h2>
+      <h2 class="feat-title rv">מה אפשר לעשות כאן?</h2>
       <div class="feats">
         <div class="feat rv">
-          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 007.5.5l3-3a5 5 0 00-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 00-7.5-.5l-3 3a5 5 0 007 7l1.7-1.7"/></svg></div>
-          <h3>שיתופי פעולה</h3><p>הזדמנויות להפוך קשרים ללקוחות, שותפים וספקים</p>
-        </div>
-        <div class="feat rv">
           <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18M8 14h.01M12 14h.01M16 14h.01M8 17.5h.01M12 17.5h.01"/></svg></div>
-          <h3>מפגשים ואירועים</h3><p>ערבי תוכן, הרצאות, נטוורקינג ואירועי עסקי</p>
+          <h3>כנסים ואירועים</h3><p>אולם עם במה ומסכים לכנסים, הרצאות, השקות וערבי לקוחות</p>
         </div>
         <div class="feat rv">
-          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.2"/><path d="M5.5 20a6.5 6.5 0 0113 0"/><circle cx="4.8" cy="10" r="2"/><circle cx="19.2" cy="10" r="2"/><path d="M1.5 18a4 4 0 014.2-3.6M22.5 18a4 4 0 00-4.2-3.6"/></svg></div>
-          <h3>קהילה איכותית</h3><p>חיבור לאנשי עסקים, יזמים, מנהלים ובעלי מקצוע</p>
-        </div>
-        <div class="feat rv">
-          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="2.5" width="6" height="12" rx="3"/><path d="M5 11a7 7 0 0014 0M12 18v3.5M8.5 21.5h7"/></svg></div>
-          <h3>תוכן וחשיפה</h3><p>פודקאסטים, תוכן עסקי והזדמנויות להציג את העשייה שלך</p>
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="9" width="16" height="6" rx="1.5"/><path d="M7 15v4M17 15v4M7 9V6.5a1.5 1.5 0 011.5-1.5h7A1.5 1.5 0 0117 6.5V9"/></svg></div>
+          <h3>חדרי ישיבות</h3><p>חדר ישיבות גדול וחדר קטן – לפגישות, הדרכות וימי עבודה</p>
         </div>
         <div class="feat rv">
           <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V4a1 1 0 011-1h8a1 1 0 011 1v17M15 9h3a1 1 0 011 1v11"/><path d="M8 7h1M11 7h1M8 10.5h1M11 10.5h1M8 14h1M11 14h1M9 21v-3h2v3"/></svg></div>
-          <h3>מרחב עסקי</h3><p>גישה למקום לאירוח, פגישות, כנסים ואירועים עסקיים</p>
+          <h3>עבודה ומשרדים</h3><p>לאונג׳ עבודה ו-10 משרדים פרטיים בשדרה אחת</p>
         </div>
         <div class="feat rv">
-          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="4.5" rx="1"/><path d="M5 12.5V21h14v-8.5M12 8v13"/><path d="M12 8C10.5 4 6.5 3.5 6.5 6c0 2 3.5 2 5.5 2zM12 8c1.5-4 5.5-4.5 5.5-2 0 2-3.5 2-5.5 2z"/></svg></div>
-          <h3>הטבות ייחודיות</h3><p>הטבות ושיתופי פעולה עם עסקים נבחרים</p>
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="2.5" width="6" height="12" rx="3"/><path d="M5 11a7 7 0 0014 0M12 18v3.5M8.5 21.5h7"/></svg></div>
+          <h3>פודקאסט ותוכן</h3><p>אולפן פודקאסט להקלטת שיחות ותוכן עסקי</p>
+        </div>
+        <div class="feat rv">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h10l-1 7a4 4 0 01-8 0z"/><path d="M12 14v6M8.5 21h7"/></svg></div>
+          <h3>בר ומרפסת גג</h3><p>בר פנימי ומרפסת גג עם בר חיצוני – לקבלות פנים וערבים</p>
+        </div>
+        <div class="feat rv">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.2"/><path d="M5.5 20a6.5 6.5 0 0113 0"/><circle cx="4.8" cy="10" r="2"/><circle cx="19.2" cy="10" r="2"/><path d="M1.5 18a4 4 0 014.2-3.6M22.5 18a4 4 0 00-4.2-3.6"/></svg></div>
+          <h3>מועדון עסקים</h3><p>מי שרוצה יותר מצטרף למועדון: מפגשים, קשרים ושיתופי פעולה</p>
         </div>
       </div>
     </div>
     <div class="divider"></div>
     <div class="manifest rv" id="manifest">
-      <h2 class="gold-text">לא עוד מועדון עסקים.</h2>
+      <h2 class="gold-text">הכול במקום אחד.</h2>
       <div class="rule"></div>
-      <p><b>FORUM CLUB</b> הוא מרחב שמחבר בין אנשים, עסקים והזדמנויות. מקום שבו אפשר להגיע לפגישה, לאירוע, להרצאה, לקפה או לכוס יין – ולצאת עם קשר חדש, רעיון חדש או הזדמנות חדשה.</p>
-      <div class="script gold-text"><span>People.&nbsp;</span><span>Business.&nbsp;</span><span>Opportunities.</span></div>
+      <p><b>FORUM BUSINESS CLUB</b> הוא מתחם עסקים בסטנדרט בינלאומי בלב פתח תקווה – לכנס, לאירוע, לפגישה או ליום עבודה, בלי לנסוע לתל אביב.</p>
+      <p style="margin-top:14px">אפשר להזמין את המקום לאירוע שלך, ואפשר להצטרף כחבר מועדון וליהנות מהקהילה שנפגשת כאן.</p>
+      <div class="script gold-text"><span>People.&nbsp;</span><span>Ideas.&nbsp;</span><span>Opportunities.</span></div>
     </div>
   </div>
+</section>
+
+<!-- HALL -->
+<section class="hall" id="hall" aria-label="אולם כנסים ואירועים">
+  <div class="hall-txt rv">
+    <div class="eyebrow">CONFERENCE &amp; EVENTS HALL</div>
+    <h2 class="gold-text">אולם כנסים ואירועים</h2>
+    <p>אולם בעיצוב לאונג׳ – לכנס מקצועי, להרצאה, להשקה או לערב לקוחות. הכול באותה קומה: הבר, חדרי הישיבות ומרפסת הגג.</p>
+    <ul>
+      <li>במה, פודיום ושני מסכים</li>
+      <li>ישיבת לאונג׳ ופינת אש</li>
+      <li>בר צמוד לאולם</li>
+      <li>חדר ישיבות בזכוכית בהמשך האולם</li>
+    </ul>
+    <div class="hall-btns">
+      <a href="#join" class="btn" data-topic="כנס / אירוע">לבדיקת תאריך לאירוע<svg><use href="#arrow"/></svg></a>
+      <button type="button" class="btn ghost" data-film>צפה בסרט<svg><use href="#arrow"/></svg></button>
+    </div>
+  </div>
+  <div class="hall-img"><img src="img/hall-v2.jpg" alt="אולם הכנסים והאירועים של FORUM BUSINESS CLUB" loading="lazy"></div>
 </section>
 
 <!-- SPACES -->
@@ -444,15 +501,15 @@ footer .wrap{display:flex;align-items:center;justify-content:space-between;gap:2
 <section class="join" id="join">
   <div class="form-col" id="formCol">
     <form id="joinForm" novalidate>
-      <h2>בקשת הצטרפות</h2>
-      <p class="sub">השאר פרטים ונחזור אליך בהקדם</p>
+      <h2>השאר פרטים</h2>
+      <p class="sub">לתיאום סיור, הזמנת אירוע או הצטרפות למועדון – נחזור אליך בהקדם</p>
       <div class="field"><input id="f-name" name="name" placeholder=" " autocomplete="name" required><label for="f-name">שם מלא</label></div>
       <div class="field"><input id="f-phone" name="phone" type="tel" inputmode="tel" placeholder=" " autocomplete="tel" required><label for="f-phone">טלפון</label></div>
       <div class="field"><input id="f-email" name="email" type="email" placeholder=" " autocomplete="email"><label for="f-email">אימייל</label></div>
       <div class="field sel">
-        <select id="f-field" name="field" aria-label="תחום פעילות">
-          <option value="">תחום פעילות</option>
-          <option>נדל״ן</option><option>הייטק וטכנולוגיה</option><option>פיננסים והשקעות</option><option>משפטים וייעוץ</option><option>שיווק ופרסום</option><option>יזמות</option><option>אחר</option>
+        <select id="f-field" name="topic" aria-label="במה מדובר?">
+          <option value="">במה מדובר?</option>
+          <option>כנס / אירוע</option><option>חדר ישיבות</option><option>משרד / עבודה בלאונג׳</option><option>הקלטת פודקאסט</option><option>הצטרפות למועדון</option><option>אחר</option>
         </select>
       </div>
       <div class="field"><input id="f-company" name="company" placeholder=" " autocomplete="organization"><label for="f-company">שם החברה</label></div>
@@ -468,8 +525,8 @@ footer .wrap{display:flex;align-items:center;justify-content:space-between;gap:2
 
   <div class="txt-col rv">
     <h2 class="gold-text">מקום אחד. אינסוף חיבורים.</h2>
-    <p>ה-FORUM CLUB ממוקם בלב BSR City Petah Tikva (רחוב הארץ 3, בניין C, קומה 3) – סביבת עסקים, מסחר, מסעדות ושירותים שמרכזת קהילה עסקית גדולה.</p>
-    <p>אבל המועדון הוא הרבה מעבר לכתובת.<br><strong>זה המקום שבו הקהילה נפגשת.</strong></p>
+    <p>FORUM BUSINESS CLUB ממוקם בלב BSR City Petah Tikva (רחוב הארץ 3, בניין C, קומה 3) – סביבת עסקים, מסחר, מסעדות ושירותים שמרכזת קהילה עסקית גדולה.</p>
+    <p>אבל זה הרבה יותר מכתובת.<br><strong>זה המקום שבו עסקים נפגשים.</strong></p>
     <button type="button" class="btn ghost" data-film>להכיר את המתחם – בסרט<svg><use href="#arrow"/></svg></button>
   </div>
 
@@ -477,7 +534,7 @@ footer .wrap{display:flex;align-items:center;justify-content:space-between;gap:2
     <div class="ext"><div class="ext-move" id="bsrImg">
       <img src="img/exterior.jpg" alt="בניין C ב-BSR City פתח תקווה – המועדון בקומה 3, עם מרפסת הגג" loading="lazy">
       <span class="pulse" style="left:53%;top:63%"></span>
-      <span class="tag" style="left:53%;top:63%">FORUM CLUB · קומה 3</span>
+      <span class="tag" style="left:53%;top:63%">FORUM BUSINESS CLUB · קומה 3</span>
     </div></div>
     <div class="pin"><svg><use href="#pin"/></svg><span>BSR CITY · C<br>PETAH TIKVA</span></div>
   </div>
@@ -493,7 +550,7 @@ footer .wrap{display:flex;align-items:center;justify-content:space-between;gap:2
   </a>
   <div class="mid rv">
     <p class="slogan">חברים טובים. קשרים טובים. עסקים טובים.</p>
-    <div class="lock"><svg><use href="#mark"/></svg><b class="gold-text">FORUM CLUB</b></div>
+    <div class="lock"><svg><use href="#mark"/></svg><b class="gold-text">FORUM BUSINESS CLUB</b></div>
     <small>קהילה. קשרים. הזדמנויות.</small>
   </div>
   <div></div>
@@ -504,7 +561,7 @@ footer .wrap{display:flex;align-items:center;justify-content:space-between;gap:2
   <div class="wrap">
     <div class="fnav">
       <button class="top" id="toTop" aria-label="חזרה למעלה"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 15l6-6 6 6"/></svg></button>
-      <a href="#top">דף הבית</a><i></i><a href="#about">על המועדון</a><i></i><a href="#benefits">היתרונות</a><i></i><a href="#spaces">המרחב שלנו</a><i></i><a href="#spaces">אירועים</a><i></i><a href="#join">צור קשר</a>
+      <a href="#top">דף הבית</a><i></i><a href="#about">על המקום</a><i></i><a href="#hall">אולם כנסים ואירועים</a><i></i><a href="#spaces">החללים</a><i></i><a href="#benefits">מועדון העסקים</a><i></i><a href="#join">צור קשר</a>
     </div>
     <div class="soc">
       <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 8h3V4h-3a4 4 0 00-4 4v2H8v4h2v8h4v-8h3l1-4h-4V8.5c0-.3.2-.5.5-.5z"/></svg></a>
@@ -515,11 +572,11 @@ footer .wrap{display:flex;align-items:center;justify-content:space-between;gap:2
   </div>
 </footer>
 
-<div class="modal" id="filmModal" role="dialog" aria-modal="true" aria-label="הסרט על FORUM CLUB">
+<div class="modal" id="filmModal" role="dialog" aria-modal="true" aria-label="הסרט על FORUM BUSINESS CLUB">
   <div class="box">
     <button class="x" id="filmClose" aria-label="סגירה"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
     <video id="filmVideo" controls playsinline preload="none" poster="video/poster.jpg"><source src="video/forum-film-v7.mp4" type="video/mp4"></video>
-    <p class="cap">FORUM CLUB · BSR City פתח תקווה · נפתחים ב-2027</p>
+    <p class="cap">FORUM BUSINESS CLUB · BSR City פתח תקווה · נפתחים ב-2027</p>
   </div>
 </div>
 
@@ -565,6 +622,9 @@ secs.forEach(s=>navIO.observe(s));
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.18});
 document.querySelectorAll('.rv').forEach((el,i)=>{if(el.classList.contains('feat'))el.style.transitionDelay=(i%3)*.12+'s';io.observe(el)});
 
+/* buttons that preselect the form topic */
+document.querySelectorAll('[data-topic]').forEach(a=>a.addEventListener('click',()=>{const sel=$('#f-field');if(sel)sel.value=a.dataset.topic}));
+
 /* film modal */
 const modal=$('#filmModal'),fv=$('#filmVideo');
 const openFilm=()=>{modal.classList.add('open');document.body.style.overflow='hidden';fv.play().catch(()=>{})};
@@ -585,7 +645,7 @@ const bsr=$('#bsrImg');
 addEventListener('scroll',()=>{const r=bsr.closest('.img-col').getBoundingClientRect();if(r.bottom<0||r.top>innerHeight)return;const p=(r.top+r.height/2-innerHeight/2)/innerHeight;bsr.style.transform=`scale(1.12) translateY(${p*-30}px)`},{passive:true});
 
 /* whatsapp */
-if(WHATSAPP){const w=$('#waLink');w.href='https://wa.me/'+WHATSAPP+'?text='+encodeURIComponent('היי, אשמח לשמוע על FORUM CLUB');w.target='_blank';w.rel='noopener'}
+if(WHATSAPP){const w=$('#waLink');w.href='https://wa.me/'+WHATSAPP+'?text='+encodeURIComponent('היי, אשמח לשמוע על FORUM BUSINESS CLUB');w.target='_blank';w.rel='noopener'}
 
 /* form */
 $('#joinForm').addEventListener('submit',async e=>{e.preventDefault();const f=e.target;let ok=true;
@@ -593,7 +653,7 @@ $('#joinForm').addEventListener('submit',async e=>{e.preventDefault();const f=e.
   req.forEach(([s,t])=>{const el=$(s),bad=!t(el.value);el.parentElement.classList.toggle('err',bad);if(bad)ok=false});
   if(!ok){f.querySelector('.err input').focus();return}
   const btn=f.querySelector('button');btn.disabled=true;btn.style.opacity=.7;
-  if(WEB3FORMS_KEY){try{const d=Object.fromEntries(new FormData(f));d.access_key=WEB3FORMS_KEY;d.subject='בקשת הצטרפות – FORUM CLUB';
+  if(WEB3FORMS_KEY){try{const d=Object.fromEntries(new FormData(f));d.access_key=WEB3FORMS_KEY;d.subject='פנייה מדף הנחיתה – FORUM BUSINESS CLUB';
     await fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify(d)})}catch(err){}}
   $('#formCol').classList.add('done')});
 document.querySelectorAll('.field input').forEach(i=>i.addEventListener('input',()=>i.parentElement.classList.remove('err')));
