@@ -9,6 +9,11 @@
 <meta property="og:title" content="FORUM BUSINESS CLUB – המקום שבו אנשים. עסקים. והזדמנויות נפגשים.">
 <meta property="og:description" content="מתחם עסקים, כנסים ואירועים ב-BSR City פתח תקווה.">
 <meta property="og:image" content="img/hall-v3.jpg">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="theme-color" content="#0d0c0b">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"FORUM BUSINESS CLUB","description":"מתחם עסקים, כנסים ואירועים ב-BSR City פתח תקווה: אולם כנסים ואירועים, חדרי ישיבות, לאונג׳ עבודה ומשרדים, חדר פודקאסט, בר ומרפסת גג.","url":"https://forum-businessclub.com/","image":"https://forum-businessclub.com/img/hall-v3.jpg","address":{"@type":"PostalAddress","streetAddress":"תוצרת הארץ 3, בניין C, קומה 3","addressLocality":"פתח תקווה","addressCountry":"IL"}}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Heebo:wght@300;400;500;600;700&family=Pinyon+Script&display=swap" rel="stylesheet">
@@ -516,7 +521,7 @@ footer .wrap{display:flex;align-items:center;justify-content:space-between;gap:2
       <div class="field"><input id="f-company" name="company" placeholder=" " autocomplete="organization"><label for="f-company">שם החברה</label></div>
       <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none">
       <button class="btn" type="submit">שלח בקשה<svg><use href="#send"/></svg></button>
-      <p class="form-err" id="formErr" hidden>לא הצלחנו לשלוח כרגע. אפשר לכתוב לנו <a id="errWa" href="#" target="_blank" rel="noopener">בוואטסאפ</a>.</p>
+      <p class="form-err" id="formErr" hidden><span id="formErrTxt">לא הצלחנו לשלוח כרגע. אפשר לכתוב לנו </span><a id="errWa" href="#" target="_blank" rel="noopener">בוואטסאפ</a>.</p>
       <div class="secure"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 018 0v4"/></svg>המידע שלך בטוח אצלנו</div>
     </form>
     <div class="sent">
@@ -657,12 +662,12 @@ $('#joinForm').addEventListener('submit',async e=>{e.preventDefault();const f=e.
   const d={'שם מלא':v('name'),'טלפון':v('phone'),'אימייל':v('email')||'—','במה מדובר':v('topic')||'—','שם החברה':v('company')||'—',
     _subject:'פנייה חדשה מהאתר – FORUM BUSINESS CLUB',_template:'table',_captcha:'false'};
   if(v('email'))d._replyto=v('email');
-  let sent=false;
+  let sent=false,pending=false;
   try{const r=await fetch('https://formsubmit.co/ajax/'+FORM_EMAIL,{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify(d)});
-    const j=await r.json().catch(()=>({}));sent=r.ok&&String(j.success)==='true'}catch(err){}
+    const j=await r.json().catch(()=>({}));sent=r.ok&&String(j.success)==='true';pending=/activat/i.test(j.message||'')}catch(err){}
   btn.disabled=false;btn.style.opacity='';
   if(sent){$('#formCol').classList.add('done');$('#formErr').hidden=true}
-  else{$('#formErr').hidden=false}});
+  else{$('#formErrTxt').textContent=pending?'הטופס ממתין להפעלה חד-פעמית: נשלח מייל הפעלה לבעל האתר, ומיד אחרי האישור הפניות יגיעו. בינתיים אפשר לכתוב לנו ':'לא הצלחנו לשלוח כרגע. אפשר לכתוב לנו ';$('#formErr').hidden=false}});
 document.querySelectorAll('.field input').forEach(i=>i.addEventListener('input',()=>i.parentElement.classList.remove('err')));
 
 $('#toTop').onclick=()=>scrollTo({top:0,behavior:'smooth'});
